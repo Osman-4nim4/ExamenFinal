@@ -110,9 +110,9 @@ namespace WindowsFormsApp1
             //Nuevo renglon 
             int n = dataGridView1orden.Rows.Add();
             //informacion
-            dataGridView1orden.Rows[n].Cells[0].Value = comboqueso.Text;
-            dataGridView1orden.Rows[n].Cells[1].Value = textBoxddes.Text;
-            dataGridView1orden.Rows[n].Cells[2].Value = Sucursalcombo.Text;
+            dataGridView1orden.Rows[n].Cells[1].Value = comboqueso.Text;
+            dataGridView1orden.Rows[n].Cells[2].Value = textBoxddes.Text;
+            dataGridView1orden.Rows[n].Cells[3].Value = Sucursalcombo.Text;
             //limpiar 
             comboqueso.Text = "";
             textBoxddes.Text = "";
