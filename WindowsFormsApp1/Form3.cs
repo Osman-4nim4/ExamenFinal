@@ -104,6 +104,20 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Nuevo renglon 
+            int n = dataGridView1orden.Rows.Add();
+            //informacion
+            dataGridView1orden.Rows[n].Cells[0].Value = comboqueso.Text;
+            dataGridView1orden.Rows[n].Cells[1].Value = textBoxddes.Text;
+            dataGridView1orden.Rows[n].Cells[2].Value = Sucursalcombo.Text;
+            //limpiar 
+            comboqueso.Text = "";
+            textBoxddes.Text = "";
+            Sucursalcombo.Text = "";
+        }
     }
 }
 

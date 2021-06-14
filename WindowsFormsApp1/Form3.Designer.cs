@@ -34,12 +34,12 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxddes = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Sucursalcombo = new System.Windows.Forms.ComboBox();
             this.comboqueso = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1orden = new System.Windows.Forms.DataGridView();
             this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pizza = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1orden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,13 +104,13 @@ namespace WindowsFormsApp1
             this.label3.TabIndex = 15;
             this.label3.Text = "Descripcion";
             // 
-            // textBox1
+            // textBoxddes
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 259);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(498, 88);
-            this.textBox1.TabIndex = 18;
+            this.textBoxddes.Location = new System.Drawing.Point(39, 259);
+            this.textBoxddes.Multiline = true;
+            this.textBoxddes.Name = "textBoxddes";
+            this.textBoxddes.Size = new System.Drawing.Size(498, 88);
+            this.textBoxddes.TabIndex = 18;
             // 
             // label5
             // 
@@ -158,19 +158,20 @@ namespace WindowsFormsApp1
             this.button2.TabIndex = 22;
             this.button2.Text = "Ordenar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // dataGridView1orden
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView1orden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1orden.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numero,
             this.pizza,
             this.descripcion,
             this.sucursal});
-            this.dataGridView1.Location = new System.Drawing.Point(39, 379);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(727, 150);
-            this.dataGridView1.TabIndex = 23;
+            this.dataGridView1orden.Location = new System.Drawing.Point(39, 379);
+            this.dataGridView1orden.Name = "dataGridView1orden";
+            this.dataGridView1orden.Size = new System.Drawing.Size(727, 150);
+            this.dataGridView1orden.TabIndex = 23;
             // 
             // numero
             // 
@@ -236,11 +237,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView1orden);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboqueso);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxddes);
             this.Controls.Add(this.Sucursalcombo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -250,7 +251,7 @@ namespace WindowsFormsApp1
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1orden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -266,12 +267,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxddes;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox Sucursalcombo;
         private System.Windows.Forms.ComboBox comboqueso;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView1orden;
         private System.Windows.Forms.DataGridViewTextBoxColumn numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn pizza;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
